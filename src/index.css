@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Pretendard Variable", "Pretendard", "Inter", "Noto Sans KR", sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F8FAFC;
+  color: #0F172A;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom classes for theme accent */
+.bg-accent {
+  background-color: var(--theme-accent);
+}
+.text-accent {
+  color: var(--theme-accent);
+}
+.border-accent {
+  border-color: var(--theme-accent);
+}
+.hover\:bg-accent-dark:hover {
+  filter: brightness(0.9);
+  background-color: var(--theme-accent);
+}
+.ring-accent {
+  --tw-ring-color: var(--theme-accent);
+}
